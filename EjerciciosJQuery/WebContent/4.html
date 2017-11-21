@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ejercicio4</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$("img").mouseenter(function () {
+			$(this).addClass("ocult");
+		});
+		$("img").mouseleave(function () {
+			$(this).removeClass("ocult");
+		});
+	});
+	</script>
+	<style type="text/css">
+		.ocult{
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Ejercicio 04</h1>
+		</div>
+	</div>
+	<div class="enunciado">
+		<div class="jumbotron">
+			<p>
+				Diseñe una página con una sola imagen. Si sitúa el ratón por encima se oculta 
+				la imagen. Al salir el ratón de la imagen, se muestra la imagen. 
+				Utilice sólo una clase de css.
+			</p>
+		</div>
+	</div>
+	<img id="imagen" alt="img" src="imagen/jquery-icon.png"/>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ejercicio5</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$("#boton").click(function () {
+			if($("#texto").val() == ""){
+				$("#error").text("¡¡ERROR!!");
+				$("#error").addClass("fallo");
+				return false;
+				}
+
+			});
+		});
+
+	</script>
+	<style type="text/css">
+		.fallo{
+			background-color: red; 
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+		<div class="jumbotron">
+			<h1>Ejercicio 05</h1>
+		</div>
+	</div>
+	<div class="enunciado">
+		<div class="jumbotron">
+			<p>
+				Diseñe un formulario con una caja de texto y un botón. Si pulsa el botón y el 
+				campo está vacío, debe mostrar el error en un párrafo debajo del formulario. 
+				Si pulsa el botón y el campo no está vacío, debe enviar el formulario.
+			</p>
+		</div>
+		<form action="">
+			<input type="text" id="texto">
+			<input type="submit" id="boton"> 
+		</form>
+		<span id="error"></span>
+	</div>
+</body>
+</html>

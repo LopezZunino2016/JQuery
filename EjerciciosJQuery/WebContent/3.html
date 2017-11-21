@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ejercicio3</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function () {
+			$("#boton").click(function () {
+				$("#parrafo a:first-child").toggleClass("negrita");
+
+				});
+
+		});
+	</script>
+	<style type="text/css">
+		.negrita{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Ejercicio 03</h1>
+		</div>
+	</div>
+	<div class="enunciado">
+		<div class="jumbotron">
+			<p>
+				Cree un párrafo con tres enlaces en su interior. Al pulsar un botón 
+				debe poner en negrita el texto del primer enlace.
+			</p>
+		</div>
+	</div>
+		<p id="parrafo">
+			<a href="#">Primero</a> 
+			<a href="#">Segundo</a> 
+			<a href="#">Tercero</a>
+		</p>
+		<button id="boton">Boton</button>
+	
+	
+</body>
+</html>

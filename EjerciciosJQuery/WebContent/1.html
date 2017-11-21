@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ejercicio 01</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$("#capa1").on("mouseover mouseout", function () {
+			$(this).toggleClass("capa1");
+		});
+		$("#capa2").on("mouseover mouseout", function () {
+			$(this).toggleClass("capa2");
+		});
+		$("#capa3").click(function () {
+			$(this).toggleClass("capa3");
+		});
+	});
+		
+	</script>
+	<style type="text/css">
+		.capa1 {
+			background: blue;
+		}
+		.capa2{
+			border: 2px solid yellow;
+		}
+		.capa3{
+			color: green;
+		}
+</style>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Ejercicio 01</h1>
+		</div>
+	</div>
+	<div class="enunciado">
+		<div class="jumbotron">
+			<p>
+				Cree tres capas con sus respectivos id. Cuando pase el ratón por encima cambie el color de fondo 
+				de la capa con id igual a capa1 a azul. Si el ratón pasa por la capa con id capa3 se debe poner un 
+				borde amarillo a la capa. Por último, si pulsamos en la capa con id capa2 se debe poner la letra de 
+				color verde.
+			</p>
+		</div>
+	</div>
+	<div id="capa1">Capa 1</div>
+	<div id="capa2">Capa 2</div>
+	<div id="capa3">Capa 3</div>
+</body>
+</html>

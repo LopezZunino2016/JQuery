@@ -1,0 +1,16 @@
+
+body{
+	background-color:rgb(53,58,64);
+    color: white;
+    text-align: center;
+}
+h1{
+	text-align:center;
+	color: black;
+}
+.enunciado{
+	width: 90%;
+	text-align: center;
+	margin: 5%;
+	color: black;
+}
