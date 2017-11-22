@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ejercicio 01</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("h1").click(function () {
+				$(this).toggleClass("cambiar");
+			});
+		});
+	</script>
+	<style type="text/css">
+		.cambiar{
+			color: yellow; 
+			background-color: black;
+			font-style:  oblique; 
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron m-5">
+		<p>
+			Página que muestre dos títulos de primer nivel (h1), al ser
+			presionados cambiar el color de fuente, fondo y la fuente del texto.
+		</p>
+	</div>
+	<div class="junbotron m-5">
+		<h1>Primer H1</h1>
+		<h1>Segundo H2</h1>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ejercicio 04</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function ()
+		    {
+		        $("#primer").click(function ()
+		        {
+		            $("table#tabla").css('border','black 4px solid');
+		            $("table#tabla").css('width','200px');
+					$("table#tabla").css('height', '100px');
+
+		            $("tr *").css('border','black 1px solid');
+		            $("tr *").css('width','200');
+		            $("tr *").css('height', '100');
+
+		            $("td *").css('border','black 1px solid');
+		            $("td *").css('width','200');
+		            $("td *").css('height', '100');
+		        });
+
+		        $("#segundo").click(function ()
+		        {
+		            $("table#tabla").css('border','');
+		            $("table#tabla").css('width','');
+		            $("table#tabla").css('height', '');
+
+		            $("tr *").css('border','');
+		            $("tr *").css('width','');
+		            $("tr *").css('height', '');
+
+		            $("td *").css('border','');
+		            $("td *").css('width','');
+		            $("td *").css('height', '');
+		        });
+		    });
+	</script>
+</head>
+<body>
+<div class="jumbotron m-5">
+	<p>Defina una tabla y dos botones. Al pulsar en el primer botón
+		debe poner borde a la tabla. Al pulsar en el segundo botón debe quitar
+		el borde de la tabla.</p>
+
+</div>
+
+<div class="jumbotron m-5">
+
+	<table id="tabla">
+		<tr>
+			<th>1</th>
+			<th>2</th>
+		</tr>
+		<tr >
+			<th>3</th>
+			<th>4</th>
+		</tr>
+		<tr>
+			<th>5</th>
+			<th>6</th>
+		</tr>
+	</table>
+	<br><br>
+	<input type="button" id="primer" value="Primer boton">
+	 
+	<input type="button" id="segundo" value="Segundo boton">
+</div>
+</body>
+</html>
